@@ -1,0 +1,96 @@
+,make,model,year,VClass,trany,drive,cylinders,displ,fuelType,fuelType1,city08,highway08,comb08,StickerPrice,TCO
+30642,Acura,RLX,2017,SedanMid,Automatic,FWD,6,3.5,Premium,Premium,20,30,23,51706,61566
+30644,Acura,RLX Hybrid,2017,SedanMid,Automatic,AWD,6,3.5,Premium,Premium,29,30,29,56500,64182
+30765,Audi,A6,2017,SedanMid,Automatic,FWD,4,2,Premium,Premium,24,34,28,49175,62211
+30420,Audi,A7 quattro,2017,SedanMid,Automatic,AWD,6,3,Premium,Premium,21,29,24,76075,84880
+31335,BMW,530i,2017,SedanMid,Automatic,RWD,4,2,Premium,Premium,24,34,27,61504,73852
+31337,BMW,540i,2017,SedanMid,Automatic,RWD,6,3,Premium,Premium,20,30,24,68182,81278
+30645,Buick,LaCrosse,2017,SedanMid,Automatic,FWD,6,3.6,Regular,Regular,21,31,25,31618,45646
+30646,Buick,LaCrosse AWD,2017,SedanMid,Automatic,AWD,6,3.6,Regular,Regular,20,29,23,42143,54602
+30164,Buick,Regal,2017,SedanMid,Automatic,FWD,4,2,Premium,Premium,21,29,24,41256,55595
+30165,Buick,Regal,2017,SedanMid,Automatic,FWD,4,2.4,Regular,Regular,19,30,23,28858,41637
+30647,Buick,Regal AWD,2017,SedanMid,Automatic,AWD,4,2,Premium,Premium,19,27,22,41256,55595
+30648,Cadillac,CTS,2017,SedanMid,Automatic,RWD,4,2,Premium,Premium,22,30,25,47374,61385
+30649,Cadillac,CTS,2017,SedanMid,Automatic,RWD,6,3.6,Premium,Premium,16,24,18,60457,70949
+30477,Cadillac,CTS,2017,SedanMid,Automatic,RWD,6,3.6,Regular,Regular,20,30,24,56318,67086
+30650,Cadillac,CTS AWD,2017,SedanMid,Automatic,AWD,4,2,Premium,Premium,21,29,24,55426,68372
+30478,Cadillac,CTS AWD,2017,SedanMid,Automatic,AWD,6,3.6,Regular,Regular,19,27,22,57175,67720
+30651,Cadillac,CTS-V,2017,SedanMid,Automatic,RWD,8,6.2,Premium,Premium,14,21,17,96668,98080
+30631,Chevrolet,Cruze Hatchback,2017,SedanMid,Automatic,FWD,4,1.4,Regular,Regular,29,38,32,17841,29738
+30635,Chevrolet,Cruze Hatchback,2017,SedanMid,Manual,FWD,4,1.4,Regular,Regular,28,37,31,18782,30515
+30633,Chevrolet,Cruze Premier Hatchback,2017,SedanMid,Automatic,FWD,4,1.4,Regular,Regular,28,37,31,23130,33956
+30652,Chevrolet,Malibu,2017,SedanMid,Automatic,FWD,4,1.5,Regular,Regular,27,36,30,23364,35755
+30839,Chevrolet,Malibu,2017,SedanMid,Automatic,FWD,4,2,Premium,Premium,22,33,26,31492,45597
+30840,Chevrolet,Malibu Hybrid,2017,SedanMid,Automatic,FWD,4,1.8,Regular,Regular,49,43,46,29496,38536
+30841,Chrysler,200,2017,SedanMid,Automatic,FWD,4,2.4,Regular,Regular,23,36,27,25139,37732
+30845,Chrysler,200,2017,SedanMid,Automatic,FWD,6,3.6,Gasoline or E85,Regular,19,31,23,33591,47028
+30846,Chrysler,200 AWD,2017,SedanMid,Automatic,AWD,6,3.6,Gasoline or E85,Regular,18,28,22,33591,47028
+31294,Ford,C-MAX Energi Plug-In Hybrid,2017,SedanMid,Automatic,FWD,4,2,Regular Gas and Electricity,Regular,41,38,39,27468,38860
+31005,Ford,Focus RS AWD,2017,SedanMid,Manual,AWD,4,2.3,Premium,Premium,19,25,22,43414,57089
+31261,Ford,Focus ST FWD,2017,SedanMid,Manual,FWD,4,2,Regular,Regular,22,30,25,27682,42426
+30048,Ford,Fusion AWD,2017,SedanMid,Automatic,AWD,4,2,Regular,Regular,20,29,23,31636,45759
+30146,Ford,Fusion Energi Plug-in Hybrid,2017,SedanMid,Automatic,FWD,4,2,Regular Gas and Electricity,Regular,43,41,42,37461,42182
+30072,Ford,Fusion FWD,2017,SedanMid,Automatic,FWD,4,2,Regular,Regular,21,31,25,34333,47723
+30318,Honda,Accord,2017,SedanMid,Automatic,FWD,4,2.4,Regular,Regular,26,34,29,28884,37649
+30315,Honda,Accord,2017,SedanMid,Automatic,FWD,6,3.5,Regular,Regular,21,32,24,30561,41277
+30314,Honda,Accord,2017,SedanMid,Automatic,FWD,6,3.5,Regular,Regular,21,33,25,32376,42863
+30316,Honda,Accord,2017,SedanMid,Manual,FWD,4,2.4,Regular,Regular,23,32,26,25661,36269
+31009,Honda,Civic 4Dr,2017,SedanMid,Automatic,FWD,4,1.5,Regular,Regular,32,42,36,25704,34130
+31007,Honda,Civic 4Dr,2017,SedanMid,Automatic,FWD,4,2,Regular,Regular,31,40,34,20988,30432
+31008,Honda,Civic 4Dr,2017,SedanMid,Manual,FWD,4,1.5,Regular,Regular,31,42,35,25319,35384
+31006,Honda,Civic 4Dr,2017,SedanMid,Manual,FWD,4,2,Regular,Regular,28,40,32,19288,29749
+31589,Honda,Civic Si 4Dr,2017,SedanMid,Manual,FWD,4,1.5,Premium,Premium,28,38,32,20361,37642
+29877,Hyundai,Elantra,2017,SedanMid,Automatic,FWD,4,2,Regular,Regular,28,37,32,18649,28605
+29878,Hyundai,Elantra,2017,SedanMid,Manual,FWD,4,2,Regular,Regular,26,36,29,16935,28218
+30017,Hyundai,Elantra GT,2017,SedanMid,Automatic,FWD,4,2,Regular,Regular,24,32,27,21072,32610
+30003,Hyundai,Elantra GT,2017,SedanMid,Manual,FWD,4,2,Regular,Regular,24,32,27,18892,31224
+30214,Hyundai,Sonata Hybrid,2017,SedanMid,Automatic,FWD,4,2,Regular,Regular,38,43,40,28990,38750
+30213,Hyundai,Sonata Hybrid SE,2017,SedanMid,Automatic,FWD,4,2,Regular,Regular,39,45,42,25095,35379
+30847,Infiniti,Q50,2017,SedanMid,Automatic,RWD,6,3,Premium,Premium,20,29,23,41983,56001
+30849,Infiniti,Q50 AWD,2017,SedanMid,Automatic,AWD,6,3,Premium,Premium,19,27,22,43142,56971
+30848,Infiniti,Q50S Red Sport,2017,SedanMid,Automatic,RWD,6,3,Premium,Premium,20,26,22,47449,60955
+30850,Infiniti,Q50S Red Sport  AWD,2017,SedanMid,Automatic,AWD,6,3,Premium,Premium,19,26,22,49037,62343
+31147,Infiniti,Q70,2017,SedanMid,Automatic,RWD,6,3.7,Premium,Premium,18,25,21,51979,64348
+31144,Infiniti,Q70,2017,SedanMid,Automatic,RWD,8,5.6,Premium,Premium,16,24,19,67073,78423
+31148,Infiniti,Q70 AWD,2017,SedanMid,Automatic,AWD,6,3.7,Premium,Premium,18,24,20,54388,67266
+31145,Infiniti,Q70 AWD,2017,SedanMid,Automatic,AWD,8,5.6,Premium,Premium,16,23,18,69882,82367
+31146,Infiniti,Q70 Hybrid,2017,SedanMid,Automatic,RWD,6,3.5,Premium,Premium,28,33,30,60223,70242
+30239,Kia,Forte,2017,SedanMid,Automatic,FWD,4,2,Regular,Regular,29,38,32,18081,30064
+30240,Kia,Forte,2017,SedanMid,Manual,FWD,4,2,Regular,Regular,25,34,28,16687,30023
+30539,Kia,Optima Hybrid,2017,SedanMid,Automatic,FWD,4,2,Regular,Regular,39,46,42,17702,30578
+30857,Lexus,ES 300h,2017,SedanMid,Automatic,FWD,4,2.5,Regular,Regular,40,39,40,45728,51977
+30856,Lexus,ES 350,2017,SedanMid,Automatic,FWD,6,3.5,Regular,Regular,21,30,24,43127,52626
+30957,Lexus,GS 350,2017,SedanMid,Automatic,RWD,6,3.5,Premium,Premium,20,28,23,52234,63756
+30958,Lexus,GS 350 AWD,2017,SedanMid,Automatic,AWD,6,3.5,Premium,Premium,19,26,22,53842,65696
+30959,Lexus,GS 350 F Sport,2017,SedanMid,Automatic,RWD,6,3.5,Premium,Premium,19,27,22,56349,67509
+30962,Lexus,GS 450h,2017,SedanMid,Automatic,RWD,6,3.5,Premium,Premium,29,34,31,67970,74691
+30951,Lexus,LS 460,2017,SedanMid,Automatic,RWD,8,4.6,Premium,Premium,16,24,19,73622,81652
+30952,Lexus,LS 460 AWD,2017,SedanMid,Automatic,AWD,8,4.6,Premium,Premium,16,23,18,77072,85125
+30953,Lexus,LS 460 L,2017,SedanMid,Automatic,RWD,8,4.6,Premium,Premium,16,24,19,85692,91990
+30956,Lexus,LS 460 L AWD,2017,SedanMid,Automatic,AWD,8,4.6,Premium,Premium,16,23,18,85056,92114
+30053,Lincoln,MKZ AWD,2017,SedanMid,Automatic,AWD,4,2,Regular,Regular,20,28,23,36868,49474
+30054,Lincoln,MKZ FWD,2017,SedanMid,Automatic,FWD,4,2,Regular,Regular,21,31,24,35770,48744
+31093,Mazda,3 5-Door,2017,SedanMid,Automatic,FWD,4,2,Regular,Regular,28,37,31,22467,33362
+31095,Mazda,3 5-Door,2017,SedanMid,Automatic,FWD,4,2.5,Regular,Regular,26,35,30,24564,35585
+31092,Mazda,3 5-Door,2017,SedanMid,Manual,FWD,4,2,Regular,Regular,27,37,31,20972,32510
+31094,Mazda,3 5-Door,2017,SedanMid,Manual,FWD,4,2.5,Regular,Regular,25,33,28,23469,35182
+30770,Mazda,6,2017,SedanMid,Automatic,FWD,4,2.5,Regular,Regular,27,35,30,25770,37374
+30768,Mazda,6,2017,SedanMid,Manual,FWD,4,2.5,Regular,Regular,24,34,28,23334,35983
+31149,Mercedes-Benz,AMG E43 4matic,2017,SedanMid,Automatic,4WD,6,3,Premium,Premium,18,25,21,82404,99921
+30901,Nissan,Altima,2017,SedanMid,Automatic,FWD,6,3.5,Regular,Regular,22,32,26,31140,42971
+30900,Nissan,Altima,2017,SedanMid,Automatic,FWD,4,2.5,Regular,Regular,27,39,31,21818,33646
+30215,Nissan,Maxima,2017,SedanMid,Automatic,FWD,6,3.5,Premium,Premium,21,30,25,38650,51765
+31013,Nissan,Sentra,2017,SedanMid,Automatic,FWD,4,1.8,Regular,Regular,29,37,32,18508,30746
+31012,Nissan,Sentra,2017,SedanMid,Manual,FWD,4,1.8,Regular,Regular,27,35,30,17080,29954
+31097,Subaru,Impreza 4-Door,2017,SedanMid,Automatic,AWD,4,2,Regular,Regular,28,38,32,24335,34301
+31329,Subaru,Impreza 4-Door,2017,SedanMid,Manual,AWD,4,2,Regular,Regular,24,32,27,21376,33738
+30125,Subaru,Legacy AWD,2017,SedanMid,Automatic,AWD,4,2.5,Regular,Regular,25,34,29,24802,35234
+30102,Subaru,Legacy AWD,2017,SedanMid,Automatic,AWD,6,3.6,Regular,Regular,20,28,23,34797,45160
+31059,Toyota,Avalon,2017,SedanMid,Automatic,FWD,6,3.5,Regular,Regular,21,30,24,30842,40280
+31060,Toyota,Avalon Hybrid,2017,SedanMid,Automatic,FWD,4,2.5,Regular,Regular,40,39,40,36314,42531
+30426,Toyota,Camry,2017,SedanMid,Automatic,FWD,4,2.5,Regular,Regular,24,33,27,21013,31470
+30216,Toyota,Camry,2017,SedanMid,Automatic,FWD,6,3.5,Regular,Regular,21,30,24,30529,40477
+30903,Toyota,Corolla,2017,SedanMid,Automatic,FWD,4,1.8,Regular,Regular,28,36,32,17684,28623
+30801,Toyota,Prius,2017,SedanMid,Automatic,FWD,4,1.8,Regular,Regular,54,50,52,30178,36994
+30427,Volkswagen,Passat,2017,SedanMid,Automatic,FWD,6,3.6,Regular,Regular,20,28,23,33392,48302
+30428,Volkswagen,Passat,2017,SedanMid,Automatic,FWD,4,1.8,Regular,Regular,23,34,27,21145,33414

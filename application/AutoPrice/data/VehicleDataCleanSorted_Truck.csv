@@ -1,0 +1,48 @@
+,make,model,year,VClass,trany,drive,cylinders,displ,fuelType,fuelType1,city08,highway08,comb08,StickerPrice,TCO
+31155,Chevrolet,Colorado 2WD,2017,Truck,Automatic,RWD,4,2.5,Regular,Regular,20,26,22,30922,37880
+31157,Chevrolet,Colorado 2WD,2017,Truck,Automatic,RWD,6,3.6,Regular,Regular,18,25,20,35488,41555
+31154,Chevrolet,Colorado 2WD,2017,Truck,Manual,RWD,4,2.5,Regular,Regular,19,26,22,22098,33036
+31162,Chevrolet,Colorado 4WD,2017,Truck,Automatic,4WD,4,2.5,Regular,Regular,19,24,21,35009,41226
+31163,Chevrolet,Colorado 4WD,2017,Truck,Automatic,4WD,6,3.6,Regular,Regular,17,24,19,38539,43213
+30337,Chevrolet,Silverado C15 2WD,2017,Truck,Automatic,RWD,6,4.3,Gasoline or E85,Regular,18,24,20,33748,40648
+30670,Chevrolet,Silverado C15 2WD,2017,Truck,Automatic,RWD,8,5.3,Gasoline or E85,Regular,16,23,19,45980,49408
+30335,Chevrolet,Silverado C15 2WD,2017,Truck,Automatic,RWD,8,6.2,Regular,Regular,15,21,17,57018,60334
+31028,Ford,F150 Pickup 2WD,2017,Truck,Automatic,RWD,6,3.5,Regular,Regular,18,25,21,31652,39744
+31026,Ford,F150 Pickup 2WD,2017,Truck,Automatic,RWD,6,2.7,Regular,Regular,19,26,22,32729,38668
+31040,Ford,F150 Pickup 4WD,2017,Truck,Automatic,4WD,6,3.5,Regular,Regular,17,23,20,34034,41189
+31036,Ford,F150 Pickup 4WD,2017,Truck,Automatic,4WD,6,2.7,Regular,Regular,18,23,20,50722,50459
+31033,Ford,F150 Pickup 4WD FFV,2017,Truck,Automatic,4WD,8,5,Gasoline or E85,Regular,15,21,17,38750,44965
+31037,Ford,F150 Pickup 4WD FFV,2017,Truck,Automatic,4WD,6,3.5,Gasoline or E85,Regular,17,23,19,36687,42628
+31038,Ford,F150 RAPTOR 4WD,2017,Truck,Automatic,4WD,6,3.5,Regular,Regular,15,18,16,64997,62390
+31159,GMC,Canyon 2WD,2017,Truck,Automatic,RWD,4,2.5,Regular,Regular,20,26,22,28987,35835
+31161,GMC,Canyon 2WD,2017,Truck,Automatic,RWD,6,3.6,Regular,Regular,18,25,20,30521,37651
+31158,GMC,Canyon 2WD,2017,Truck,Manual,RWD,4,2.5,Regular,Regular,19,26,22,26528,34845
+31166,GMC,Canyon 4WD,2017,Truck,Automatic,4WD,4,2.5,Regular,Regular,19,24,21,32210,39093
+31167,GMC,Canyon 4WD,2017,Truck,Automatic,4WD,6,3.6,Regular,Regular,17,24,19,38835,43583
+30074,Honda,Ridgeline AWD,2017,Truck,Automatic,AWD,6,3.5,Regular,Regular,18,25,21,33157,40453
+31061,Nissan,Frontier 2WD,2017,Truck,Automatic,RWD,4,2.5,Regular,Regular,17,22,19,24782,35220
+31063,Nissan,Frontier 2WD,2017,Truck,Automatic,RWD,6,4,Regular,Regular,16,23,19,27119,38233
+31062,Nissan,Frontier 2WD,2017,Truck,Manual,RWD,4,2.5,Regular,Regular,19,23,21,21099,32526
+31064,Nissan,Frontier 2WD,2017,Truck,Manual,RWD,6,4,Regular,Regular,16,22,19,26882,37983
+31068,Nissan,Frontier 4WD,2017,Truck,Automatic,4WD,6,4,Regular,Regular,15,21,17,32304,41595
+31069,Nissan,Frontier 4WD,2017,Truck,Manual,4WD,6,4,Regular,Regular,16,21,18,31861,41419
+30867,Nissan,Titan 2WD,2017,Truck,Automatic,RWD,8,5.6,Regular,Regular,15,21,18,50542,57925
+30871,Nissan,Titan 4WD,2017,Truck,Automatic,4WD,8,5.6,Regular,Regular,15,21,18,24397,41712
+30872,Nissan,Titan 4WD  PRO4X,2017,Truck,Automatic,4WD,8,5.6,Regular,Regular,15,20,17,31794,47528
+32268,Ram,1500 2WD,2017,Truck,Automatic,RWD,6,3,Diesel,Diesel,20,27,23,37891,43360
+30723,Ram,1500 2WD,2017,Truck,Automatic,RWD,6,3.6,Gasoline or E85,Regular,17,25,20,30109,37480
+30722,Ram,1500 2WD,2017,Truck,Automatic,RWD,8,5.7,Midgrade,Midgrade,15,22,17,34281,41466
+30724,Ram,1500 4WD,2017,Truck,Automatic,4WD,8,5.7,Midgrade,Midgrade,13,19,15,34281,41466
+30726,Ram,1500 4WD,2017,Truck,Automatic,4WD,6,3.6,Gasoline or E85,Regular,16,23,19,37230,42991
+30725,Ram,1500 4WD,2017,Truck,Automatic,4WD,8,5.7,Midgrade,Midgrade,15,21,17,37363,42474
+30715,Toyota,Tacoma 2WD,2017,Truck,Automatic,RWD,4,2.7,Regular,Regular,19,23,21,30469,37422
+30714,Toyota,Tacoma 2WD,2017,Truck,Automatic,RWD,6,3.5,Regular,Regular,19,24,21,32701,37995
+30721,Toyota,Tacoma 4WD,2017,Truck,Automatic,4WD,4,2.7,Regular,Regular,19,22,20,33785,39949
+30717,Toyota,Tacoma 4WD,2017,Truck,Automatic,4WD,6,3.5,Regular,Regular,18,23,20,38114,42777
+30719,Toyota,Tacoma 4WD,2017,Truck,Manual,4WD,4,2.7,Regular,Regular,19,21,20,20118,35308
+30716,Toyota,Tacoma 4WD,2017,Truck,Manual,4WD,6,3.5,Regular,Regular,17,21,18,36026,42735
+30718,Toyota,Tacoma 4WD Double Cab,2017,Truck,Manual,4WD,6,3.5,Regular,Regular,17,20,18,37212,42710
+30868,Toyota,Tundra 2WD,2017,Truck,Automatic,RWD,8,4.6,Regular,Regular,15,19,16,35621,42795
+30870,Toyota,Tundra 2WD,2017,Truck,Automatic,RWD,8,5.7,Regular,Regular,13,18,15,34317,43821
+30873,Toyota,Tundra 4WD,2017,Truck,Automatic,4WD,8,4.6,Regular,Regular,14,18,16,38421,44884
+30875,Toyota,Tundra 4WD,2017,Truck,Automatic,4WD,8,5.7,Regular,Regular,13,17,15,42702,48013
