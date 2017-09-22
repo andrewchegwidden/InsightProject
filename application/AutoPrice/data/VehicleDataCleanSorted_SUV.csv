@@ -1,0 +1,178 @@
+,make,model,year,VClass,trany,drive,cylinders,displ,fuelType,fuelType1,city08,highway08,comb08,StickerPrice,TCO
+30281,Acura,MDX AWD,2017,SUV,Automatic,AWD,6,3.5,Premium,Premium,19,26,22,46553,55077
+29967,Acura,RDX AWD,2017,SUV,Automatic,AWD,6,3.5,Premium,Premium,19,27,22,38520,48183
+29966,Acura,RDX FWD,2017,SUV,Automatic,FWD,6,3.5,Premium,Premium,20,28,23,36993,46877
+30006,BMW,X3 sDrive28i,2017,SUV,Automatic,RWD,4,2,Premium,Premium,21,28,24,47564,63268
+30007,BMW,X3 xDrive28i,2017,SUV,Automatic,AWD,4,2,Premium,Premium,21,28,24,50995,66035
+30008,BMW,X3 xDrive35i,2017,SUV,Automatic,AWD,6,3,Premium,Premium,19,26,21,58415,73867
+31174,BMW,X4 xDrive28i,2017,SUV,Automatic,AWD,4,2,Premium,Premium,20,27,23,56815,69593
+30502,BMW,X5 sDrive35i,2017,SUV,Automatic,RWD,6,3,Premium,Premium,18,25,21,66319,80344
+31276,BMW,X5 xDrive 35d,2017,SUV,Automatic,AWD,6,3,Diesel,Diesel,23,29,25,71194,79317
+30504,BMW,X5 xDrive35i,2017,SUV,Automatic,AWD,6,3,Premium,Premium,18,24,20,69655,83553
+30678,BMW,X5 xDrive50i,2017,SUV,Automatic,AWD,8,4.4,Premium,Premium,15,21,17,88712,102813
+30503,BMW,X6 sDrive35i,2017,SUV,Automatic,RWD,6,3,Premium,Premium,18,25,21,75556,84180
+30505,BMW,X6 xDrive35i,2017,SUV,Automatic,AWD,6,3,Premium,Premium,18,24,20,76464,85509
+30679,BMW,X6 xDrive50i,2017,SUV,Automatic,AWD,8,4.4,Premium,Premium,15,21,17,92327,101092
+30195,Buick,Enclave AWD,2017,SUV,Automatic,AWD,6,3.6,Regular,Regular,15,22,17,45046,56298
+30187,Buick,Enclave FWD,2017,SUV,Automatic,FWD,6,3.6,Regular,Regular,15,22,18,42484,53826
+30671,Buick,Encore,2017,SUV,Automatic,FWD,4,1.4,Regular,Regular,25,33,28,24972,36497
+30673,Buick,Encore AWD,2017,SUV,Automatic,AWD,4,1.4,Regular,Regular,24,30,27,26795,38009
+30369,Buick,Envision AWD,2017,SUV,Automatic,AWD,4,2,Premium,Premium,20,26,22,44984,56539
+30373,Cadillac,Escalade 2WD,2017,SUV,Automatic,RWD,8,6.2,Regular,Regular,15,22,17,74027,79732
+30386,Cadillac,Escalade 4WD,2017,SUV,Automatic,4WD,8,6.2,Regular,Regular,15,20,17,77472,81636
+29925,Cadillac,XT5,2017,SUV,Automatic,FWD,6,3.6,Regular,Regular,19,27,22,48878,57715
+29926,Cadillac,XT5 AWD,2017,SUV,Automatic,AWD,6,3.6,Regular,Regular,18,26,21,51404,59740
+30139,Chevrolet,Equinox AWD,2017,SUV,Automatic,AWD,4,2.4,Regular,Regular,20,28,23,31821,43391
+30176,Chevrolet,Equinox FWD,2017,SUV,Automatic,FWD,4,2.4,Regular,Regular,21,31,25,25034,35928
+30196,Chevrolet,Traverse AWD,2017,SUV,Automatic,AWD,6,3.6,Regular,Regular,15,22,17,29653,43900
+30188,Chevrolet,Traverse FWD,2017,SUV,Automatic,FWD,6,3.6,Regular,Regular,15,22,18,31113,45659
+30672,Chevrolet,Trax,2017,SUV,Automatic,FWD,4,1.4,Regular,Regular,25,33,28,19009,30479
+30674,Chevrolet,Trax AWD,2017,SUV,Automatic,AWD,4,1.4,Regular,Regular,24,30,27,20660,31803
+30577,Dodge,Durango AWD,2017,SUV,Automatic,4WD,6,3.6,Regular,Regular,18,25,21,35033,42321
+30575,Dodge,Durango AWD,2017,SUV,Automatic,AWD,8,5.7,Midgrade,Midgrade,14,22,17,48797,57479
+30572,Dodge,Durango RWD,2017,SUV,Automatic,RWD,6,3.6,Regular,Regular,19,26,21,33098,41113
+30571,Dodge,Durango RWD,2017,SUV,Automatic,RWD,8,5.7,Midgrade,Midgrade,14,22,17,44923,54839
+30493,Dodge,Journey,2017,SUV,Automatic,FWD,4,2.4,Regular,Regular,19,25,21,20988,34330
+30494,Dodge,Journey,2017,SUV,Automatic,FWD,6,3.6,Gasoline or E85,Regular,17,25,19,31141,43374
+30500,Dodge,Journey AWD,2017,SUV,Automatic,AWD,6,3.6,Regular,Regular,16,24,19,32547,44488
+31134,Ford,Edge AWD,2017,SUV,Automatic,AWD,4,2,Regular,Regular,20,27,23,29228,43069
+31177,Ford,Edge AWD,2017,SUV,Automatic,AWD,6,2.7,Regular,Regular,17,24,20,44876,52841
+31132,Ford,Edge FWD,2017,SUV,Automatic,FWD,4,2,Regular,Regular,21,29,24,27260,41669
+30028,Ford,Escape AWD,2017,SUV,Automatic,AWD,4,1.5,Regular,Regular,22,28,24,28105,38670
+30022,Ford,Escape FWD,2017,SUV,Automatic,FWD,4,1.5,Regular,Regular,23,30,26,26093,36363
+30021,Ford,Escape FWD,2017,SUV,Automatic,FWD,4,2.5,Regular,Regular,21,29,24,22935,34313
+30190,Ford,Expedition 2WD,2017,SUV,Automatic,RWD,6,3.5,Regular,Regular,15,21,18,47842,53232
+30197,Ford,Expedition 4WD,2017,SUV,Automatic,4WD,6,3.5,Regular,Regular,15,20,17,50390,55477
+30191,Ford,Expedition EL 2WD,2017,SUV,Automatic,RWD,6,3.5,Regular,Regular,15,20,17,52238,57395
+30198,Ford,Expedition EL 4WD,2017,SUV,Automatic,4WD,6,3.5,Regular,Regular,15,19,16,55053,59897
+30285,Ford,Explorer 2WD FFV,2017,SUV,Automatic,FWD,6,3.5,Gasoline or E85,Regular,17,24,20,30482,41411
+30286,Ford,Explorer AWD,2017,SUV,Automatic,AWD,4,2.3,Regular,Regular,18,25,21,46638,53228
+30291,Ford,Explorer AWD,2017,SUV,Automatic,AWD,6,3.5,Regular,Regular,16,22,18,49792,56122
+30287,Ford,Explorer AWD,2017,SUV,Automatic,AWD,6,3.5,Regular,Regular,16,23,19,53511,60985
+30290,Ford,Explorer AWD FFV,2017,SUV,Automatic,AWD,6,3.5,Gasoline or E85,Regular,16,23,19,34083,44345
+30283,Ford,Explorer FWD,2017,SUV,Automatic,FWD,4,2.3,Regular,Regular,19,27,22,43576,50880
+31200,Ford,Flex AWD,2017,SUV,Automatic,AWD,6,3.5,Regular,Regular,15,21,17,38817,51578
+31196,Ford,Flex FWD,2017,SUV,Automatic,FWD,6,3.5,Regular,Regular,16,23,19,36187,48816
+30078,GMC,Acadia AWD,2017,SUV,Automatic,AWD,6,3.6,Regular,Regular,18,25,20,48930,57776
+30076,GMC,Acadia FWD,2017,SUV,Automatic,FWD,6,3.6,Regular,Regular,18,25,21,44931,54506
+30199,GMC,Acadia Limited AWD,2017,SUV,Automatic,AWD,6,3.6,Regular,Regular,15,22,17,51443,59782
+30192,GMC,Acadia Limited FWD,2017,SUV,Automatic,FWD,6,3.6,Regular,Regular,15,22,18,49583,58271
+30140,GMC,Terrain AWD,2017,SUV,Automatic,AWD,4,2.4,Regular,Regular,20,28,23,28123,37886
+30181,GMC,Terrain FWD,2017,SUV,Automatic,FWD,4,2.4,Regular,Regular,21,31,25,23369,33869
+31235,Honda,CR-V AWD,2017,SUV,Automatic,AWD,4,1.5,Regular,Regular,27,33,29,29520,36317
+31234,Honda,CR-V AWD,2017,SUV,Automatic,AWD,4,2.4,Regular,Regular,25,31,27,26524,34612
+31230,Honda,CR-V FWD,2017,SUV,Automatic,FWD,4,1.5,Regular,Regular,28,34,30,28396,35552
+31229,Honda,CR-V FWD,2017,SUV,Automatic,FWD,4,2.4,Regular,Regular,26,32,28,25126,33468
+31232,Honda,Pilot AWD,2017,SUV,Automatic,AWD,6,3.5,Regular,Regular,19,26,22,33608,42539
+31227,Honda,Pilot FWD,2017,SUV,Automatic,FWD,6,3.5,Regular,Regular,20,27,23,31461,40529
+29882,Hyundai,Santa Fe AWD,2017,SUV,Automatic,AWD,6,3.3,Regular,Regular,18,24,20,35709,46758
+29879,Hyundai,Santa Fe FWD,2017,SUV,Automatic,FWD,6,3.3,Regular,Regular,18,25,21,30681,42713
+29869,Hyundai,Santa Fe Sport AWD,2017,SUV,Automatic,AWD,4,2,Regular,Regular,19,26,22,33148,43903
+29896,Hyundai,Santa Fe Sport AWD,2017,SUV,Automatic,AWD,4,2.4,Regular,Regular,20,26,22,29301,39237
+29867,Hyundai,Santa Fe Sport FWD,2017,SUV,Automatic,FWD,4,2,Regular,Regular,20,28,23,31352,42330
+29895,Hyundai,Santa Fe Sport FWD,2017,SUV,Automatic,FWD,4,2.4,Regular,Regular,21,27,24,27652,37452
+30228,Hyundai,Tucson AWD,2017,SUV,Automatic,AWD,4,1.6,Regular,Regular,24,28,25,27983,38011
+30227,Hyundai,Tucson AWD,2017,SUV,Automatic,AWD,4,2,Regular,Regular,21,26,23,25446,35922
+30229,Hyundai,Tucson Eco AWD,2017,SUV,Automatic,AWD,4,1.6,Regular,Regular,25,30,27,26182,35742
+30226,Hyundai,Tucson Eco FWD,2017,SUV,Automatic,FWD,4,1.6,Regular,Regular,26,32,28,24480,34485
+30225,Hyundai,Tucson FWD,2017,SUV,Automatic,FWD,4,1.6,Regular,Regular,25,30,27,26459,36816
+30224,Hyundai,Tucson FWD,2017,SUV,Automatic,FWD,4,2,Regular,Regular,23,30,26,23748,34049
+30976,Infiniti,QX60 AWD,2017,SUV,Automatic,AWD,6,3.5,Premium,Premium,19,26,22,51092,60748
+30975,Infiniti,QX60 FWD,2017,SUV,Automatic,FWD,6,3.5,Premium,Premium,20,27,22,48355,58201
+30985,Infiniti,QX60 Hybrid AWD,2017,SUV,Automatic,AWD,4,2.5,Regular,Regular,25,27,26,67927,61860
+30983,Infiniti,QX60 Hybrid FWD,2017,SUV,Automatic,FWD,4,2.5,Regular,Regular,25,27,26,60486,67588
+30561,Infiniti,QX70 AWD,2017,SUV,Automatic,AWD,6,3.7,Premium,Premium,16,22,18,55727,68124
+30551,Infiniti,QX70 RWD,2017,SUV,Automatic,RWD,6,3.7,Premium,Premium,17,24,19,54571,66630
+30982,Infiniti,QX80 2WD,2017,SUV,Automatic,RWD,8,5.6,Premium,Premium,14,20,16,69835,77392
+30984,Infiniti,QX80 4WD,2017,SUV,Automatic,4WD,8,5.6,Premium,Premium,13,19,15,76002,83865
+30562,Jeep,Cherokee 4WD,2017,SUV,Automatic,AWD,4,2.4,Regular,Regular,21,28,23,26101,35126
+30552,Jeep,Cherokee FWD,2017,SUV,Automatic,FWD,4,2.4,Regular,Regular,21,30,25,23459,33317
+30564,Jeep,Cherokee Trailhawk 4WD,2017,SUV,Automatic,4WD,4,2.4,Regular,Regular,19,25,22,33556,40686
+30579,Jeep,Grand Cherokee SRT 4WD,2017,SUV,Automatic,AWD,8,6.4,Premium,Premium,13,19,15,75976,73502
+31343,Jeep,New Compass 2WD,2017,SUV,Automatic,FWD,4,2.4,Regular,Regular,22,31,25,26417,37709
+31385,Jeep,New Compass 2WD,2017,SUV,Manual,FWD,4,2.4,Regular,Regular,23,32,26,22616,33493
+31325,Jeep,New Compass 4WD,2017,SUV,Automatic,AWD,4,2.4,Regular,Regular,22,30,25,26417,37709
+31387,Jeep,New Compass 4WD,2017,SUV,Manual,AWD,4,2.4,Regular,Regular,22,31,25,23999,34442
+30442,Jeep,Patriot 4WD,2017,SUV,Automatic,4WD,4,2.4,Regular,Regular,20,23,21,26152,36914
+30437,Jeep,Patriot 4WD,2017,SUV,Automatic,4WD,4,2.4,Regular,Regular,20,25,22,24976,36195
+30438,Jeep,Patriot 4WD,2017,SUV,Manual,AWD,4,2.4,Regular,Regular,22,27,24,20976,32115
+30495,Jeep,Patriot FWD,2017,SUV,Automatic,FWD,4,2,Regular,Regular,22,26,24,22292,33651
+30558,Jeep,Patriot FWD,2017,SUV,Manual,FWD,4,2,Regular,Regular,23,30,25,18736,30554
+30556,Jeep,Patriot FWD,2017,SUV,Manual,FWD,4,2.4,Regular,Regular,23,28,25,20976,32115
+31071,Jeep,Renegade 2WD,2017,SUV,Automatic,FWD,4,2.4,Gasoline or E85,Regular,22,30,25,23454,32835
+30935,Jeep,Renegade 2WD,2017,SUV,Manual,FWD,4,1.4,Premium,Premium,24,31,26,19781,32326
+31072,Jeep,Renegade 4WD,2017,SUV,Automatic,AWD,4,2.4,Regular,Regular,21,29,24,26164,35334
+30937,Jeep,Renegade 4WD,2017,SUV,Manual,AWD,4,1.4,Premium,Premium,24,31,26,20831,32365
+30978,Jeep,Wrangler 4WD,2017,SUV,Automatic,4WD,6,3.6,Regular,Regular,17,21,18,36522,39887
+30979,Jeep,Wrangler 4WD,2017,SUV,Manual,4WD,6,3.6,Regular,Regular,17,21,18,37177,40872
+30064,Kia,Sorento AWD,2017,SUV,Automatic,AWD,4,2.4,Regular,Regular,21,25,22,29535,39054
+30065,Kia,Sorento AWD,2017,SUV,Automatic,AWD,6,3.3,Regular,Regular,17,23,19,32850,42728
+30060,Kia,Sorento FWD,2017,SUV,Automatic,FWD,4,2.4,Regular,Regular,21,28,24,27167,36724
+30061,Kia,Sorento FWD,2017,SUV,Automatic,FWD,6,3.3,Regular,Regular,18,25,20,31139,42219
+29921,Kia,Sportage AWD,2017,SUV,Automatic,AWD,4,2,Regular,Regular,20,23,21,35077,45524
+29919,Kia,Sportage AWD,2017,SUV,Automatic,AWD,4,2.4,Regular,Regular,21,25,23,29595,39282
+29918,Kia,Sportage FWD,2017,SUV,Automatic,FWD,4,2,Regular,Regular,21,26,23,33084,43503
+29916,Kia,Sportage FWD,2017,SUV,Automatic,FWD,4,2.4,Regular,Regular,22,29,25,24046,34793
+30818,Lexus,GX 460,2017,SUV,Automatic,4WD,8,4.6,Premium,Premium,15,18,16,54998,63537
+30819,Lexus,LX 570,2017,SUV,Automatic,4WD,8,5.7,Premium,Premium,13,18,15,95784,95152
+31044,Lexus,NX 200t,2017,SUV,Automatic,FWD,4,2,Premium,Premium,22,28,25,39549,49811
+31049,Lexus,NX 200t AWD,2017,SUV,Automatic,AWD,4,2,Premium,Premium,22,28,24,41811,52204
+31050,Lexus,NX 200t AWD F Sport,2017,SUV,Automatic,AWD,4,2,Premium,Premium,22,27,24,45238,54956
+30878,Lexus,RX 350,2017,SUV,Automatic,FWD,6,3.5,Regular,Regular,20,27,23,50479,56794
+30880,Lexus,RX 350 AWD,2017,SUV,Automatic,AWD,6,3.5,Regular,Regular,19,26,22,53370,59553
+30031,Lincoln,MKC AWD,2017,SUV,Automatic,AWD,4,2,Regular,Regular,19,25,22,35607,46143
+30026,Lincoln,MKC FWD,2017,SUV,Automatic,FWD,4,2,Regular,Regular,21,28,23,33584,43960
+31201,Lincoln,MKT AWD,2017,SUV,Automatic,AWD,6,3.5,Regular,Regular,15,21,17,53401,70610
+31197,Lincoln,MKT FWD,2017,SUV,Automatic,FWD,6,3.7,Regular,Regular,16,24,19,43106,58402
+31179,Lincoln,MKX AWD,2017,SUV,Automatic,AWD,6,3.7,Regular,Regular,16,23,19,41449,53522
+31171,Lincoln,MKX FWD,2017,SUV,Automatic,FWD,6,3.7,Regular,Regular,17,25,20,39195,51620
+30193,Lincoln,Navigator 2WD,2017,SUV,Automatic,RWD,6,3.5,Regular,Regular,15,21,17,65509,74142
+30201,Lincoln,Navigator 4WD,2017,SUV,Automatic,4WD,6,3.5,Regular,Regular,15,20,17,68422,75452
+30194,Lincoln,Navigator L 2WD,2017,SUV,Automatic,RWD,6,3.5,Regular,Regular,15,20,17,67555,76632
+30202,Lincoln,Navigator L 4WD,2017,SUV,Automatic,4WD,6,3.5,Regular,Regular,15,19,16,69423,77481
+31360,Mazda,CX-5 2WD,2017,SUV,Automatic,FWD,4,2.5,Regular,Regular,24,31,27,28602,39758
+31362,Mazda,CX-5 4WD,2017,SUV,Automatic,4WD,4,2.5,Regular,Regular,23,29,26,31625,42033
+31273,Mazda,CX-9 2WD,2017,SUV,Automatic,FWD,4,2.5,Regular,Regular,22,28,24,23815,40566
+31274,Mazda,CX-9 4WD,2017,SUV,Automatic,4WD,4,2.5,Regular,Regular,20,26,23,24912,42236
+30574,Mercedes-Benz,GLE350,2017,SUV,Automatic,RWD,6,3.5,Premium,Premium,18,23,20,59045,73930
+30681,Mercedes-Benz,GLE350 4matic,2017,SUV,Automatic,4WD,6,3.5,Premium or E85,Premium,18,22,19,61866,76138
+30033,Mercedes-Benz,GLS450 4matic,2017,SUV,Automatic,4WD,6,3,Premium,Premium,17,22,19,77777,90638
+30067,Mercedes-Benz,GLS550 4matic,2017,SUV,Automatic,4WD,8,4.7,Premium,Premium,14,18,16,101626,114929
+31045,Mitsubishi,Outlander 2WD,2017,SUV,Automatic,FWD,4,2.4,Regular,Regular,25,30,27,22597,35915
+31052,Mitsubishi,Outlander 4WD,2017,SUV,Automatic,4WD,4,2.4,Regular,Regular,24,29,26,25657,38104
+31053,Mitsubishi,Outlander 4WD,2017,SUV,Automatic,4WD,6,3,Premium,Premium,20,27,23,30897,45860
+31047,Mitsubishi,Outlander Sport 2WD,2017,SUV,Automatic,FWD,4,2,Regular,Regular,24,30,27,20610,32327
+31339,Mitsubishi,Outlander Sport 2WD,2017,SUV,Automatic,FWD,4,2.4,Regular,Regular,23,28,25,23495,36661
+31046,Mitsubishi,Outlander Sport 2WD,2017,SUV,Manual,FWD,4,2,Regular,Regular,23,29,25,19509,32304
+31055,Mitsubishi,Outlander Sport 4WD,2017,SUV,Automatic,4WD,4,2,Regular,Regular,23,29,26,22229,34003
+31340,Mitsubishi,Outlander Sport 4WD,2017,SUV,Automatic,4WD,4,2.4,Regular,Regular,22,27,24,24690,37929
+30817,Nissan,Armada 2WD,2017,SUV,Automatic,RWD,8,5.6,Regular,Regular,14,19,16,29406,46355
+30820,Nissan,Armada 4WD,2017,SUV,Automatic,4WD,8,5.6,Regular,Regular,13,18,15,31761,49292
+30914,Nissan,Pathfinder 2WD,2017,SUV,Automatic,FWD,6,3.5,Regular,Regular,20,27,23,29931,39840
+30916,Nissan,Pathfinder 4WD,2017,SUV,Automatic,4WD,6,3.5,Regular,Regular,19,26,22,31896,41393
+30917,Nissan,Pathfinder 4WD Platinum,2017,SUV,Automatic,4WD,6,3.5,Regular,Regular,19,26,21,44235,52332
+31181,Nissan,Rogue AWD,2017,SUV,Automatic,AWD,4,2.5,Regular,Regular,25,32,27,25466,35741
+31173,Nissan,Rogue FWD,2017,SUV,Automatic,FWD,4,2.5,Regular,Regular,26,33,29,24909,34315
+30782,Subaru,Crosstrek AWD,2017,SUV,Automatic,AWD,4,2,Regular,Regular,26,33,29,25495,35361
+30781,Subaru,Crosstrek AWD,2017,SUV,Manual,AWD,4,2,Regular,Regular,23,30,26,24490,35860
+30032,Subaru,Forester AWD,2017,SUV,Automatic,AWD,4,2,Premium,Premium,23,27,25,30727,42046
+30127,Subaru,Forester AWD,2017,SUV,Automatic,AWD,4,2.5,Regular,Regular,26,32,28,27914,36654
+30675,Subaru,Forester AWD,2017,SUV,Manual,AWD,4,2.5,Regular,Regular,22,28,24,27420,38045
+30141,Subaru,Outback AWD,2017,SUV,Automatic,AWD,4,2.5,Regular,Regular,25,32,28,27977,36510
+30107,Subaru,Outback AWD,2017,SUV,Automatic,AWD,6,3.6,Regular,Regular,20,27,22,37328,45228
+31301,Toyota,4Runner 2WD,2017,SUV,Automatic,RWD,6,4,Regular,Regular,17,21,18,36953,42888
+31303,Toyota,4Runner 4WD,2017,SUV,Automatic,AWD,6,4,Regular,Regular,17,20,18,39933,44929
+31302,Toyota,4Runner 4WD,2017,SUV,Automatic,4WD,6,4,Regular,Regular,17,20,18,39651,44319
+31192,Toyota,Highlander,2017,SUV,Automatic,FWD,4,2.7,Regular,Regular,20,24,22,32612,40074
+31194,Toyota,Highlander,2017,SUV,Automatic,FWD,6,3.5,Regular,Regular,20,27,23,34521,41134
+31202,Toyota,Highlander AWD,2017,SUV,Automatic,AWD,6,3.5,Regular,Regular,20,26,22,36138,42131
+30811,Toyota,RAV4,2017,SUV,Automatic,FWD,4,2.5,Regular,Regular,23,29,25,30710,39330
+31073,Toyota,Sequoia 2WD,2017,SUV,Automatic,RWD,8,5.7,Regular,Regular,13,17,15,49527,53973
+31076,Toyota,Sequoia 4WD,2017,SUV,Automatic,4WD,8,5.7,Regular,Regular,13,17,14,50476,55027
+31056,Toyota,Sequoia 4WD FFV,2017,SUV,Automatic,4WD,8,5.7,Gasoline or E85,Regular,13,17,14,51946,55833
+30367,Volkswagen,Tiguan,2017,SUV,Automatic,FWD,4,2,Premium,Premium,20,24,22,33104,47241
+30506,Volkswagen,Touareg,2017,SUV,Automatic,AWD,6,3.6,Regular,Regular,17,23,19,50919,63261
+30251,Volvo,XC60 AWD,2017,SUV,Automatic,AWD,4,2,Regular,Regular,20,29,23,40070,47637
+30249,Volvo,XC60 FWD,2017,SUV,Automatic,FWD,4,2,Regular,Regular,23,30,26,44005,51226
+30230,Volvo,XC90 AWD,2017,SUV,Automatic,AWD,4,2,Premium,Premium,20,25,22,56112,66815
+30385,Volvo,XC90 FWD,2017,SUV,Automatic,FWD,4,2,Premium,Premium,22,26,24,58875,67450
