@@ -35,50 +35,45 @@ def output():
   if (userVClass is None) or (userMethod is None):
     return render_template("home.html")
   mycoefs = []
-  if userVClass.lower() == "suv":
-    userVClass = "SUV"
-  if "car" in userVClass.lower():
+  if "sedan" in userVClass.lower():
     userVClass = "sedan"
-  elif "sedan" in userVClass.lower():
-    userVClass = "sedan"
-    #mycoefs = [0.968324198962,12560.0547686]
     mycoefs = [0.92511604056627661,-242.6476549850758,20747.970831886545]
+    bsId="20211"
+    mpg_init="25"
+    calcnum=7200.0
   elif "truck" in userVClass.lower():
     userVClass = "truck"
-    #mycoefs = [0.657331882067,19131.8760612]
-    mycoefs = [0.59657718843629359,-590.80535829169958,32561.359262109392]
-
-
-
+    mycoefs = [0.79657718843629359,-590.80535829169958,32561.359262109392]
+    bsId="20218"
+    mpg_init="20"
+    calcnum=9000.0
+  elif "suv" in userVClass.lower():
+    userVClass = "SUV"
+    mycoefs = [0.9242028,-134.10497107, 15954.8963986]
+    bsId="20217"
+    mpg_init="20"
+    calcnum=9000.0
   else:
     userVClass="Undefined"
-  if "sticker" in userMethod.lower():
+
+  if "msrp" in userMethod.lower():
     userMethod = "MSRP"
   elif "budget" in userMethod.lower():
     userMethod="Budget"
   else:
     userMethod="Undefined"
   if (not mycoefs) or (userMethod == "Undefined") or (userVClass == "Undefined"):
-    return render_template("ERROR3.html")
+    return render_template("ERROR.html")
   else:
     print "This is the userVClass: ", userVClass
+    print "This is the userMethod: ", userMethod
     print "This is c1: ",mycoefs[0]
     print "This is b:  ",mycoefs[1]
-    print "SHIT!!!!!!!: ", userMethod
-    if userMethod == "Budget":
-      if userVClass == "sedan":
-        return render_template("output_2_sedan.html", userVClass=userVClass, c1=mycoefs[0],c2=mycoefs[1], b=mycoefs[2])
-      elif userVClass == "truck":
-        return render_template("output_2_truck.html", userVClass=userVClass, c1=mycoefs[0],c2=mycoefs[1], b=mycoefs[2])
-      else:
-        return render_template("ERROR3.html")
-    if userMethod == "MSRP":
-      if userVClass == "sedan":
-        return render_template("output_1_sedan.html", userVClass=userVClass, c1=mycoefs[0],c2=mycoefs[1], b=mycoefs[2])
-      elif userVClass == "truck":
-        return render_template("output_1_truck.html", userVClass=userVClass, c1=mycoefs[0],c2=mycoefs[1], b=mycoefs[2])
-      else:
-        return render_template("ERROR3.html")
-
+    if userMethod == "Budget" and (userVClass == "sedan" or userVClass == "truck" or userVClass == "SUV"):
+      return render_template("output_2.html", userVClass=userVClass, c1=mycoefs[0],c2=mycoefs[1], b=mycoefs[2],bsId=bsId,mpg_init=mpg_init,calcnum=calcnum)
+    elif userMethod == "MSRP" and (userVClass == "sedan" or userVClass == "truck" or userVClass == "SUV"):
+      return render_template("output_1.html", userVClass=userVClass, c1=mycoefs[0],c2=mycoefs[1], b=mycoefs[2], bsId=bsId,mpg_init=mpg_init,calcnum=calcnum)
+    else:
+      return render_template("ERROR.html")
 
 
