@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="../static/media/AutoPriceLogo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Insight Data Science Project">
+    <meta name="author" content="Andrew Chegwidden">
+    <meta name="viewport" content="width=device-width , initial-scale=1" />
+    <title>AutoPrice</title>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/one-page-wonder.css" rel="stylesheet">
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript"> $(document).ready(function(){$('[data-toggle="popover"]').popover({placement : 'top',trigger : 'hover',html : true});}); </script>
+    <style type="text/css">
+      .popover-style{margin: 150px 50px;}
+    </style>
+    </head>
+  <body>
+
+<!-- Navigation bar at the top -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+<div class="container">
+    <img src="../static/media/AutoPriceLogo.png" alt="AutoPriceLogo" style="width384px;height:192px;">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <h2><a class="nav-link text-white" href="/home">Home</h2>
+              <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <!--<li class="nav-item">
+                <h2><a class="nav-link text-white" href = "https://docs.google.com/presentation/d/e/2PACX-1vTH2Gc8j8Ntlwxn9bjiCzyFIUlhBEE5uH6U4Jv5N5SGAYwhz7XMdo1W8VFuXT5smT18X6vN3lmzhlV3/pub?start=true&loop=true&delayms=3000" target="_blank">Demo Slides</h2>
+                <span class="sr-only">(current)</span>
+                </a>
+             </li>-->
+            <li class="nav-item">
+                <h2><a class="nav-link text-white" href="/about">About</h2>
+                <span class="sr-only">(current)</span>
+                </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<br><br><br><br><br><br>
+<section>
+  <div class="container">
+    <h2 class="display-4 text-white" style="font-weight:bold"><u>Intro</u></h2>
+    <h3 class="display-5 text-white">When shopping for a new car most consumers are unaware of all the ancillary costs associated with owning a vehicle.  These costs include:</h3>
+    <h4 class="display-5 text-white">
+      <ul>
+        <li>Fuel</li>
+        <li>Maintenance and repair</li>
+        <li>Financing charges</li>
+        <li>Insurance</li>
+        <li>Depreciation</li>
+      </ul>
+    </h4>
+    <h3 class="display-5 text-white">There are really only three things a new car buyer generally knows:</h3>
+    <h4 class="display-5 text-white">
+      <ol>
+        <li>What style of vehicle they want (car, truck, or SUV).</li>
+        <li>How much they can affoard to pay a month.</li>
+        <li>What the sticker price (MSRP) of the new car is.</li>
+      </ol>
+    </h4>
+    <h3 class="display-5 text-white">AutoPrice attempts to solve this problem by using machine learning algorithms to predict the 5-year cost of ownership using only two features: the type of vehicle the user is interested in buying and either how much the user can afford a month or how much the car they want sells for.  </h3><br>
+    <h2 class="display-4 text-white" style="font-weight:bold"><u>Source Code</u></h2>
+    <h3 class="display-5 text-white">Source code for this project is available on <a href="https://github.com/andrewchegwidden/InsightProject/tree/master/application" target="_blank">Github</a>.</h3><br>
+    <h2 class="display-4 text-white" style="font-weight:bold"><u>How It Works</u></h2>
+    <h3 class="display-5 text-white">AutoPrice is a project developed for the 2017 Insight Data Science Remote Program.  It uses a combination of web scraping tools and machine learning to predict the total cost of ownership given the style and price of a vehicle.  The data come from both the Department of Energy's <a href="http://www.fueleconomy.gov/feg/ws/index.shtml" target="_blank">fuel economy </a>website as well as True Cost to Own&reg; data from the <a href="https://www.edmunds.com/tco.html" target="_blank">Edmunds.com</a> webpage.</h3>
+    <h3 class="display-5 text-white">The Edmunds data is taken as the target value and with which the following assumptions are taken into considerations:</h3>
+    <h4 class="display-5 text-white">
+      <ul>
+        <li>Ownership expenses are estimated for a 5-year period.</li>
+        <li>The vehicle will be financed to own and not leased.</li>
+        <li>A 10% down payment will be made.</li>
+        <li>The user has above average credit (700+).</li>
+        <li>The loan term is 60 months.</li>
+      </ul>
+    </h4>
+    <h3 class="display-5 text-white">A linear regression algorithm utilzing python's SciKitLearn module is performed on the data and is used to predict that total cost of ownership.  The linear regression algorithm was chosen over Support Vector Machine (SVM) and Random Forest algorithms because it gave the smallest mean absolute error while keeping the user input requirements to a minimum.</h3><br>
+
+    <h2 class="display-4 text-white" style="font-weight:bold"><u>Demo Slides</u></h2><br>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTH2Gc8j8Ntlwxn9bjiCzyFIUlhBEE5uH6U4Jv5N5SGAYwhz7XMdo1W8VFuXT5smT18X6vN3lmzhlV3/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="598" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
+</section>
+
+</body>
+</html>
+
