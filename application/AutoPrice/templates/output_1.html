@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
+    <link rel="icon" type="image/png" href="../static/media/AutoPriceLogo.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Insight Data Science Project">
     <meta name="author" content="Andrew Chegwidden">
     <meta name="viewport" content="width=device-width , initial-scale=1" />
-    
     <title>AutoPrice</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="../static/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="../static/css/one-page-wonder.css" rel="stylesheet">
-
-  </head>
-
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript"> $(document).ready(function(){$('[data-toggle="popover"]').popover({placement : 'top',trigger : 'hover',html : true});}); </script>
+    <script>function numberWithCommas(x){return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");}</script>
+    <script>function stripspaces(input){input.value = input.value.replace(/\s/gi,"");return true;}</script>
+    <script>function RemoveComma(str){return str.replace(/\,/g,'');}</script>
+    <script>
+        function checkInput(text) {
+            
+            if (text) {
+                $("#clearBtn1").addClass("show");
+            } else {
+                $("#clearBtn1").removeClass("show");
+            }
+            
+        }
+    </script>
+        
+        
+    </script>
+    <style type="text/css">
+      .popover-style{margin: 150px 50px;}
+    </style>
+    </head>
   <body>
-    <!-- Navigation bar at the top -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<!-- Navigation bar at the top -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
 <div class="container">
-    <!--<a href="http://insightdatascience.com" >
-        <img src="../static/media/insight_logo.jpeg" alt="InsightLogo" style="width:96px;height:48px;">
-    </a>-->
     <img src="../static/media/AutoPriceLogo.png" alt="AutoPriceLogo" style="width384px;height:192px;">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,41 +49,49 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <h2><a class="nav-link text-white" href="/home">Home</h2>
-                <span class="sr-only">(current)</span>
+              <span class="sr-only">(current)</span>
               </a>
+            </li>
+            <!--<li class="nav-item">
+                <h2><a class="nav-link text-white" href = "https://docs.google.com/presentation/d/e/2PACX-1vTH2Gc8j8Ntlwxn9bjiCzyFIUlhBEE5uH6U4Jv5N5SGAYwhz7XMdo1W8VFuXT5smT18X6vN3lmzhlV3/pub?start=true&loop=true&delayms=3000" target="_blank">Demo Slides</h2>
+                <span class="sr-only">(current)</span>
+                </a>
+             </li>-->
+            <li class="nav-item">
+                <h2><a class="nav-link text-white" href="/about">About</h2>
+                <span class="sr-only">(current)</span>
+                </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-<!--
-    <header class="masthead" >
-      <div class="overlay bg-dark">
-        <div class="container">
-          <h1 class="display-2 text-white">AutoPrice</h1>
-        </div>
-      </div>
-    </header>
--->
-<br><br><br><br><br><br>
 
+<br><br><br><br><br><br>
 <section>
   <div class="container">
     <div class="row align-items-center">
       <h1 class="display-6 text-white">Adjust the sliders below to calculate your predicted monthly expenses for your new {{userVClass}}.</h1>
       <div class="col-md-6 order-2">
         <div class="p-5">
-          <font size="7" color="white" style="font-weight:bold"><center><big>$<span style="font-weight:bold" id="dispVariable"></span> / mo</big></center></font>
-          <form action="https://www.cars.com/for-sale/searchresults.action/">
+          <center><font size="7" color="white" style="font-weight:bold"><center><big>$<span style="font-weight:bold" id="dispVariable"></span> / mo</big></center></font></center>
+          <form id="findcars" action="https://www.cars.com/for-sale/searchresults.action/">
+            <input type="hidden" name="page" value="1" />
+            <input type="hidden" name="perPage" value="50" />
             <input type="hidden" name="bsId" value={{bsId}} />
-            <input type="hidden" name="prMx" value="34000" />
+            <input type="hidden" name="prMx" id="prMx" value="30000" />
             <input type="hidden" name="rd" value="20" />
-            <input type="hidden" name="searchSOURCE" value="QUICK_FORMS" />
+            <input type="hidden" name="searchSOURCE" value="SORT" />
+            <input type="hidden" name="sort" value="price-highest" />
             <input type="hidden" name="stkTyp" value="N" />
             <input type="hidden" name="stkTypId" value="28880" />
             <input type="hidden" name="tracktype" value="newcc" />
-            <input type="hidden" name="zc" value="48910" />
-            <center> <input type="submit" value="Find Matching Vehicles!" style="width:450px;font-size:25px;height:50px"/></center>
+            <center>
+              <input onkedown="javascript:stripspaces(this);" type="text" placeholder= "Enter your zip code to find matching vehicles!" pattern= "[0-9]{5}" autofocus required style="width:502px;font-size:25px;height:50px" name="zc"  />
+              <button type="submit" style="font-size:25px;height:50px" class="btn btn-default">
+                <span class="glyphicon glyphicon-search"></span> Search
+              </button>
+            </center>
           </form>
         </div>
       </div>
@@ -81,9 +102,8 @@
               <label for="range">$15k</label>
               <input autocomplete="off" type="range" id="input_MSRP" name="input_MSRP" min="15000" max="75000" step="250" value ="30000" oninput="show_value(numberWithCommas(this.value))"></input>
               <output for="range" id="output_MSRP">$75k</output>
-              <script>function show_value(x){document.getElementById("MSRP_slider_value").innerHTML=x;}</script>
+              <script>function show_value(x){document.getElementById("MSRP_slider_value").innerHTML=x;$("#prMx").val(RemoveComma(x));}</script>
               <p>MSRP: $<span id="MSRP_slider_value" >30,000</span></p>
-                    
               <label for="range">$1</label>
               <input autocomplete="off" type="range" id="input_GasPrice" name="input_GasPrice" min="1" max="5" step="0.1" value ="2.4" oninput="show_value0(this.value)"></input>
               <output for="range" id="output_GasPrice">$5</output>
@@ -91,8 +111,8 @@
               <p>Gas Price: $<span id="GasPrice_slider_value" >2.4</span> / gal</p>
                     
               <label for="range">0</label>
-              <input autocomplete="off" type="range" id="input_Mileage" name="input_Mileage" min="0" max="50000" step="250" value ="15000" oninput="show_value1(numberWithCommas(this.value))"></input>
-              <output for="range" id="output_Mileage">50,000</output>
+              <input autocomplete="off" type="range" id="input_Mileage" name="input_Mileage" min="0" max="30000" step="250" value ="15000" oninput="show_value1(numberWithCommas(this.value))"></input>
+              <output for="range" id="output_Mileage">30,000</output>
               <script>function show_value1(x){document.getElementById("Mileage_slider_value").innerHTML=x;x=numberWithCommas(x);}</script>
               <p>Yearly Mileage: <span id="Mileage_slider_value" >15,000</span> miles / yr</p>
                     
@@ -117,6 +137,8 @@
   var MPG = document.getElementById("input_MPG");
   var Budget = 0; //variable to be controlled
   var dispVariable = document.getElementById("dispVariable");
+  var dispVariable = document.getElementById("dispVariable");
+
   dispVariable.innerHTML = Budget;
   setInterval(function()
     {
@@ -127,21 +149,7 @@
     }, 100
     )
 </script>
-
-<script>function numberWithCommas(x){return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");}</script>
-
-<!-- Footer
- <footer class="py-5 bg-dark">
- <div class="container">
- <p class="m-0 text-center text-white">Copyright &copy; AutoPrice.site 2017</p>
- </div>
- </footer>-->
-
-<!-- Bootstrap core JavaScript -->
-<script src="../static/js/jquery.min.js"></script>
-<script src="../static/js/popper.min.js"></script>
-<script src="../static/js/bootstrap.min.js"></script>
-<script>function numberWithCommas(x){return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");}</script>
 </body>
-
 </html>
+
+

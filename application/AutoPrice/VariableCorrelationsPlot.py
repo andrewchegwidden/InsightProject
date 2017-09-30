@@ -33,7 +33,7 @@ def myModel(userVClass):
   ax.set_yticks(ticks)
   ax.set_xticklabels(keep_col2)
   ax.set_yticklabels(keep_col2)
-  fig.savefig('CorrelationPlot_'+userVClass+'.png')
+  fig.savefig('Plots/CorrelationPlot_'+userVClass+'.png')
 
 
 myModel("SUV")

@@ -3,40 +3,50 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.style.use('ggplot')
-from sklearn import model_selection
+from sklearn import model_selection, preprocessing, feature_selection
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error, explained_variance_score
 from sklearn.model_selection import train_test_split
 
 def myModel(userVClass):
 
-  dataFile_sedan="AutoPrice/data/VehicleDataCleanSorted_SedanMid.csv"
-  dataFile_truck="AutoPrice/data/VehicleDataCleanSorted_Truck.csv"
+  dataFile_sedan="data/VehicleDataCleanSorted_SedanMid.csv"
+  dataFile_truck="data/VehicleDataCleanSorted_Truck.csv"
+  dataFile_SUV="data/VehicleDataCleanSorted_SUV.csv"
   data_sedan_df=pd.read_csv(dataFile_sedan)
   data_truck_df=pd.read_csv(dataFile_truck)
-  
+  data_SUV_df=pd.read_csv(dataFile_SUV)
+
   ##  Clean up dataFile to inlcude only columns we need and store as PandasDF
 
 
   keep_col = ['StickerPrice','comb08','displ','TCO']
   data_sedan2_df=data_sedan_df[keep_col]
   data_truck2_df=data_truck_df[keep_col]
+  data_SUV2_df=data_SUV_df[keep_col]
 
   if userVClass == "sedan":
     data_df=data_sedan2_df
   if userVClass == "truck":
     data_df=data_truck2_df
-
+  if userVClass == "SUV":
+      data_df=data_SUV2_df
 
 
   ##  Create numpy array for model building
   npMatrix=np.matrix(data_df)
-  X = npMatrix[:,0]
+  X = npMatrix[:,1]
   Y = npMatrix[:,3]
 
   ## Split the set into testing and training samples
   X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.25, random_state=42)
 
+
+  min_max_scaler = preprocessing.MinMaxScaler()
+#X_train = min_max_scaler.fit_transform(X_train)
+#X_test = min_max_scaler.fit_transform(X_test)
+#Y_train = min_max_scaler.fit_transform(Y_train)
+#Y_test = min_max_scaler.fit_transform(Y_test)
 
   ## Run the model
   model = LinearRegression()
@@ -61,7 +71,9 @@ def myModel(userVClass):
     name="c"+str(i+1)
     coef[name]=value
   b = model.intercept_[0]
-  print coef
+  print "b: ", b
+  for key, value in coef.items():
+    print key,": ",value
   print ""
 
   MAE = mean_absolute_error(Y_test, Y_pred)
@@ -76,47 +88,9 @@ def myModel(userVClass):
   print("Score: %.2f" % Score)
   print ""
 
-  ## Plotting (only used locally)
-#  mydf1=pd.DataFrame.from_records(Y_pred_full)
-#  mydf1=mydf1.rename(columns = {0:'Predicted TCO'})
-#  mydf2=pd.DataFrame.from_records(Y.tolist())
-#  mydf2=mydf2.rename(columns = {0:'TCO'})
-#  PredTrue_df=mydf1.join(mydf2)
-
-#  mydf3=pd.DataFrame.from_records(Y_pred_full*1.2)
-#  mydf3=mydf3.rename(columns = {0:'Predicted TCO2'})
-#  PredTrue_df2=PredTrue_df.join(mydf3)
-
-
-#  ax = data_sedan2_df.plot.scatter(x='StickerPrice',y='TCO', color='Red', label='Sedan')
-#  data_truck2_df.plot.scatter(x='StickerPrice',y='TCO', color='Green', label='Truck', ax=ax)
-
-#  plt.show()
-
-
-
-
-
-#Y_pred_full=model.predict(X)
-#Y_pred_full_df = pd.DataFrame(Y_pred_full)
-
- #data_df.plot.scatter(x='StickerPrice',y='TCO',c=data_df['StickerPrice']*coef['c1'] + data_df['comb08']*coef['c2'] + data_df['displ']*coef['c3'] + b, s=50)
- #plt.show()
-
-
-  #data_df.plot.scatter(x='TCO',y='TCO',c=data_df['StickerPrice']*coef['c1'] + data_df['comb08']*coef['c2'] + data_df['displ']*coef['c3'] + b, s=50)
-  #plt.show()
-
-#pd.tools.plotting.scatter_matrix(data_df.loc[:,"StickerPrice":"displ"], diagonal="kde")
-#  plt.tight_layout()
-#  plt.show()
-
-
-  print "30k: " , (model.predict(30000)/60.0)
-
   results = []
-  results = [model.coef_[0][0], model.intercept_[0] ]
+  #results = [model.coef_[0][0],model.coef_[0][1], model.intercept_[0] ]
 
   return results
 
-
+myModel('sedan')

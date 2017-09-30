@@ -20,6 +20,10 @@ from calcRegression import myModel
 def home():
     return render_template("home.html")
 
+@app_AutoPrice.route('/about')
+def about():
+    return render_template("about.html")
+
 
 @app_AutoPrice.route('/htw')
 def htw():
@@ -43,13 +47,13 @@ def output():
     calcnum=7200.0
   elif "truck" in userVClass.lower():
     userVClass = "truck"
-    mycoefs = [0.79657718843629359,-590.80535829169958,32561.359262109392]
+    mycoefs = [0.7369752,-462.92720897,31660.3261817]
     bsId="20218"
     mpg_init="20"
     calcnum=9000.0
   elif "suv" in userVClass.lower():
     userVClass = "SUV"
-    mycoefs = [0.9242028,-134.10497107, 15954.8963986]
+    mycoefs = [0.94175931,-59.3097646, 13693.4734]
     bsId="20217"
     mpg_init="20"
     calcnum=9000.0

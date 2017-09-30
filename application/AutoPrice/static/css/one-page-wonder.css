@@ -6,17 +6,24 @@
 
 body {
     padding-top: 54px;
+    background-color:#343a40
 }
 
 @media (min-width: 992px) {
     body {
         padding-top: 56px;
+        background-color:#343a40
     }
 }
 
+
+
+
+
 header.masthead {
     /*background: url('https://unsplash.it/1900/1080?image=304') no-repeat center center scroll;*/
-    background: url('../media/new_car.jpeg') no-repeat center center scroll;
+    background: url('../media/AutoPriceLogo.png') no-repeat center center scroll;
+    background-color:#343a40
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -35,3 +42,45 @@ header.masthead > .overlay {
         padding: 10rem 0;
     }
 }
+
+
+
+
+
+
+
+#dlbutton{
+    background:#223445;
+    color:#FFFFFF ;
+    border: 1px solid #223445;
+    border-radius: 10px;
+    -moz-border-radius: 2px;
+    display:inline-block;
+    width: 15em;
+    height: 25em;
+    -webkit-font-smoothing: antialiased;
+    -webkit-border-radius: 5px;
+}
+
+select option {
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
