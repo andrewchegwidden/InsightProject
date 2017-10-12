@@ -2,13 +2,11 @@ import numpy as np
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
-from sklearn import model_selection
+from sklearn import model_selection, preprocessing
 from sklearn.linear_model import LinearRegression, Lasso, HuberRegressor
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error, explained_variance_score, accuracy_score, f1_score
-from sklearn.feature_selection import f_regression
+from sklearn.feature_selection import f_regression, SelectKBest
 from sklearn.model_selection import train_test_split, cross_val_predict
-from sklearn.svm import SVR
-from sklearn.datasets import make_regression
 
 
 
@@ -31,74 +29,137 @@ def myModel(userVClass):
   keep_col = ['StickerPrice','comb08','displ','TCO']
   data_df=data_df2[keep_col]
 
-  ##  Create numpy array for model building
-  npmatrix=np.matrix(data_df)
-  X=data_df[['StickerPrice','comb08']]
+  ##  Create PandasDF array for model building
+  X=data_df[['StickerPrice','displ','comb08']]
   Y=data_df[['TCO']]
   
   
   X_sticker=data_df[['StickerPrice']]
   X_mpg=data_df[['comb08']]
+  X_displ=data_df[['displ']]
+  
+  
+
   
   ## Split the set into testing and training samples
   X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.25, random_state=42)
 
+  ##
+  #scaler_x = preprocessing.MinMaxScaler()
+  #scaler_x.fit(X_train)
+  #scaler_y = preprocessing.MinMaxScaler()
+  #scaler_y.fit(Y_train)
+  #X_train = scaler_x.transform(X_train)
+  #X_test = scaler_x.transform(X_test)
+  #Y_train = scaler_y.transform(Y_train)
+  #Y_test = scaler_y.transform(Y_test)
 
-  ## Declaring Model Types
-  
-  
-  models_str = ['LinearRegression','Lasso']; model0=LinearRegression(); model1=Lasso(alpha=100.0); models = {models_str[0]:model0,models_str[1]:model1}
-  #models_str = ['Lasso']; model0=Lasso(alpha=1000); models = {models_str[0]:model0}
+
+  model = SelectKBest(score_func=f_regression,k=1)
+  results = model.fit(X_train,Y_train)
+  print 'scores: ',results.scores_
+  print 'pvalues: ',results.pvalues_
+
 
   ## Declaring dicts
-  modelScores={}
+  modelScores_test={}
+  modelScores_train={}
+  modelScores_full={}
+
   modelCoefs={}
   modelIntercept={}
-  modelMSE={}
-  modelMAE={}
+
+  modelMAE_test={}
+  modelMAE_train={}
   modelMAE_full={}
-  modelMAPE={}
+
+  modelMAPE_test={}
+  modelMAPE_train={}
   modelMAPE_full={}
-  modelY_pred={}
+
+  modelY_pred_test={}
+  modelY_pred_train={}
   modelY_pred_full={}
+
   modelY_test={}
-  modelY={}
-  modelX={}
+  modelY_train={}
+  modelY_full={}
+  modelX_test={}
+  modelX_train={}
+  modelX_full={}
+  
+  modelFeatureScores_test={}
+  modelFeatureScores_train={}
+  modelFeatureScores_full={}
+
+  ## Declaring Model Types
+  #models_str = ['Lasso']; model0=Lasso(alpha=0.000000001); models = {models_str[0]:model0}
+  models_str = ['LinearRegression']; model0=LinearRegression(); models = {models_str[0]:model0}
 
   ## Loop over models and fill dicts
   for i, model_str in enumerate(models_str):
     models[model_str].fit(X_train,Y_train)
-    Y_pred = models[model_str].predict(X_test)
+    
+    Y_pred_test = models[model_str].predict(X_test)
+    Y_pred_train = models[model_str].predict(X_train)
     Y_pred_full = models[model_str].predict(X)
-    modelY_pred[model_str]=Y_pred
+
+    modelY_pred_test[model_str]=Y_pred_test
+    modelY_pred_train[model_str]=Y_pred_train
     modelY_pred_full[model_str]=Y_pred_full
+ 
     modelY_test[model_str]=Y_test
-    modelY[model_str]=Y
-    modelX[model_str]=X
-    score=models[model_str].score(X_test,Y_test)
-    MSE = mean_squared_error(Y_test, Y_pred)
-    MAE = mean_absolute_error(Y_test, Y_pred)
+    modelY_train[model_str]=Y_train
+    modelY_full[model_str]=Y
+
+    modelX_test[model_str]=X_test
+    modelX_train[model_str]=X_train
+    modelX_full[model_str]=X
+    
+    score_test=models[model_str].score(X_test,Y_test)
+    score_train=models[model_str].score(X_train,Y_train)
+    score_full=models[model_str].score(X,Y)
+
+    MAE_test = mean_absolute_error(Y_test, Y_pred_test)
+    MAE_train = mean_absolute_error(Y_train, Y_pred_train)
     MAE_full = mean_absolute_error(Y, Y_pred_full)
-    #MAPE= mean_absolute_percentage_error(Y_test, Y_pred)
-    #MAPE_full= mean_absolute_percentage_error(Y, Y_pred_full)
+
+    MAPE_test= mean_absolute_percentage_error(Y_test, Y_pred_test)
+    MAPE_train= mean_absolute_percentage_error(Y_train, Y_pred_train)
+    MAPE_full= mean_absolute_percentage_error(Y, Y_pred_full)
+    
+    FeatureScore_test=SelectKBest(score_func=f_regression ,k=3);
+    FeatureScore_train=SelectKBest(score_func=f_regression ,k=3);
+    FeatureScore_full=SelectKBest(score_func=f_regression ,k=3);
+
     modelIntercept[model_str]=models[model_str].intercept_[0]
     modelCoefs[model_str]=models[model_str].coef_
-    modelScores[model_str]=score
-    modelMSE[models_str[i]]=MSE
-    modelMAE[models_str[i]]=MAE
-    modelMAE_full[models_str[i]]=MAE_full
-    #modelMAPE[models_str[i]]=MAPE
-    #modelMAPE_full[models_str[i]]=MAPE_full
+    modelScores_test[model_str]=score_test
+    modelScores_train[model_str]=score_train
+    modelScores_full[model_str]=score_full
 
-  ## Loop over models and print metrics
+    modelMAE_test[models_str[i]]=MAE_test
+    modelMAE_train[models_str[i]]=MAE_train
+    modelMAE_full[models_str[i]]=MAE_full
+    
+    modelMAPE_test[models_str[i]]=MAPE_test
+    modelMAPE_train[models_str[i]]=MAPE_train
+    modelMAPE_full[models_str[i]]=MAPE_full
+
+    modelFeatureScores_test[models_str[i]]=FeatureScore_test.fit(X_test,Y_test)
+    modelFeatureScores_train[models_str[i]]=FeatureScore_train.fit(X_train,Y_train)
+    modelFeatureScores_full[models_str[i]]=FeatureScore_full.fit(X,Y)
+
+## Loop over models and print metrics
   for i, model_str in enumerate(models_str):
     print model_str
-    print 'R2:    ',modelScores[model_str]
-    print 'MSE:   ',modelMSE[model_str]
-    print 'MAE:   ',modelMAE[model_str]
-    print 'MAE_f: ',modelMAE_full[model_str]
-    #print 'MAPE:   ',modelMAPE[model_str]
-    #print 'MAPE_f: ',modelMAPE_full[model_str]
+    print "Metric: (train) (test) (full)"
+    print("R2: (%.3f) (%.3f) (%.3f)") % (modelScores_train[model_str], modelScores_test[model_str], modelScores_full[model_str])
+    print("MAE: (%.3f) (%.3f) (%.3f)") % (modelMAE_train[model_str]/60.0, modelMAE_test[model_str]/60.0, modelMAE_full[model_str]/60.0)
+    #print("MAPE: (%.3f) (%.3f) (%.3f)") % (modelMAPE_train[model_str], modelMAPE_test[model_str], modelMAPE_full[model_str])
+    #print("FeatScore: (%.3f) (%.3f) (%.3f)") % (modelFeatureScores_train[model_str], modelFeatureScores_test[model_str], modelFeatureScores_full[model_str])
+    print "FeatScore: (",modelFeatureScores_train[model_str].scores_,") (",modelFeatureScores_test[model_str].scores_,")"
+
     print 'b:     ',modelIntercept[model_str]
     print 'coefs: ',modelCoefs[model_str]
     print ''
@@ -138,7 +199,7 @@ def myModel(userVClass):
     ax = fig.add_subplot(111)
     ax.set_xlabel('True Value')
     ax.set_ylabel('Predicted Value')
-    ax.scatter(modelY[model_str]/60.0,modelY_pred_full[model_str]/60.0,label=(model_str+"  R2: {0:.2f}".format(modelScores[model_str])),edgecolors=(0,0,0))
+    ax.scatter(modelY_full[model_str]/60.0,modelY_pred_full[model_str]/60.0,label=(model_str+"  R2: {0:.2f}".format(modelScores_full[model_str])),edgecolors=(0,0,0))
     plt.legend(loc='upper left')
     if userVClass == 'Truck':
       plt.plot([32500/60.0,52000/60.0],[32500/60.0,52000/60.0], color = 'green')
@@ -218,6 +279,8 @@ def myModel(userVClass):
   PlotVariables(userVClass=userVClass,xvar='comb08', yvar='TCO', xaxis_label='Vehicle MPG',yaxis_label='Total Cost of Ownership [$]')
   PlotVariables(userVClass=userVClass,xvar='displ', yvar='TCO', xaxis_label='Engine Displacement [L]',yaxis_label='Total Cost of Ownership [$]')
   PlotVariables(userVClass=userVClass,xvar='StickerPrice', yvar='comb08', xaxis_label='MSRP [$]',yaxis_label='Vehicle MPG')
+  PlotVariables(userVClass=userVClass,xvar='comb08', yvar='displ', xaxis_label='Vehicle MPG',yaxis_label='Engine Displacement [L]')
+  PlotVariables(userVClass=userVClass,xvar='StickerPrice', yvar='displ', xaxis_label='MSRP [$]',yaxis_label='Engine Displacement [L]')
 
 
 
@@ -225,8 +288,8 @@ def myModel(userVClass):
 
 
 
-myModel("Truck")
-myModel("SUV")
+#myModel("Truck")
+#myModel("SUV")
 myModel("SedanMid")
 
 

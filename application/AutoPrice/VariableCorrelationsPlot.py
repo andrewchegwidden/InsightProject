@@ -23,21 +23,22 @@ def myModel(userVClass):
   
 
   correlations = data_df.corr()
+  print correlations
   # plot correlation matrix
   fig = plt.figure()
   ax = fig.add_subplot(111)
   cax = ax.matshow(correlations, vmin=-1, vmax=1)
   fig.colorbar(cax)
   ticks = np.arange(0,7,1)
-  ax.set_xticks()
+  ax.set_xticks(ticks)
   ax.set_yticks(ticks)
   ax.set_xticklabels(keep_col2)
   ax.set_yticklabels(keep_col2)
   fig.savefig('Plots/CorrelationPlot_'+userVClass+'.png')
 
 
-myModel("SUV")
-myModel("Truck")
-myModel("SedanMid")
+myModel('SUV')
+myModel('Truck')
+myModel('SedanMid')
 
 
